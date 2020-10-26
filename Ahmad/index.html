@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleacher Report</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color:white;
+  color:black;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+    <div class="topnav" id="myTopnav">
+        <a href="https://bleacherreport.com/nfl" class="active">NFL</a>
+        <a href="https://bleacherreport.com/nba">NBA</a>
+        <a href="https://bleacherreport.com/college-football">CFB</a>
+        <a href="https://bleacherreport.com/world-football">world Football</a>
+        <a href="https://bleacherreport.com/mlb">MLB</a>
+        <a href="https://bleacherreport.com/cbb">CBB</a>
+        <a href="https://bleacherreport.com/mma">MMA</a>
+        <a href="https://bleacherreport.com/aew">AEW</a>
+        <a href="https://bleacherreport.com/wwe">WWE</a>
+        <a href="https://bleacherreport.com/wnba">WNBA</a>
+        <a href="https://bleacherreport.com/golf">Golf</a>
+        <a href="https://bleacherreport.com/tennis">Tennis</a>
+        <a href="https://bleacherreport.com/boxing">Boxing</a>
+        <a href="https://bleacherreportshop.com/?utm_source=Bleacher%20Report&utm_medium=referral&utm_campaign=Bleacher%20Report%20Website%20Menu">B/R Shop</a>
+        <a href="https://bleacherreport.com/boxing">More</a>
+        <a href="https://bleacherreport.com">Shows</a>
+        <a href="https://bleacherreport.com">B/R Kicks</a>
+        <a href="https://bleacherreport.com">B/R Live</a>
+        <a href="https://bleacherreport.com">Mag</a>
+        <a href="https://bleacherreport.com">Get the App</a>
+        <a href="https://bleacherreport.com">Account</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      
+      
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+
+      <div class="body">
+        <img src="Images/background.webp" style="background-size: cover; padding-left: 250px;">
+      </div>
+
+
+
+
+    <div>
+        <header class="text-gray-700 body-font">
+            <div style="text-align: center; padding-left: 200px;" class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center" style="text-align: center;">
+
+              <a href="#"><button  class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">Top News
+              </button></a>
+
+              <nav style="text-align: center;" class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a href="https://bleacherreport.com/articles/2915054-clayton-kershaw-max-muncy-power-dodgers-to-3-2-world-series-lead-vs-rays" class="mr-5 hover:text-gray-900">Dodgers Take 3-2 World Series Lead</a>|
+                <a href="https://bleacherreport.com/articles/2915068-cam-newton-benched-as-patriots-qb-for-jarrett-stidham-after-struggles-vs-49ers" class="mr-5 hover:text-gray-900">Patriots Benched Cam Newton</a>|
+                <a href="https://bleacherreport.com/articles/2913779-odell-beckham-jr-out-for-browns-vs-bengals-after-suffering-knee-injury" class="mr-5 hover:text-gray-900">OBJ Might Have Major Injury</a>
+              </nav>
+             
+            </div>
+          </header>
+    </div>
+
+    <section class="text-gray-700 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+          <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+            <a href="https://bleacherreport.com/articles/2914424-bleacher-reports-expert-consensus-week-7-nfl-picks"><img class="object-cover object-center rounded" alt="hero" src="Images/rugby.webp"></a>
+          </div>
+          <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+            <a href="https://bleacherreport.com/articles/2914424-bleacher-reports-expert-consensus-week-7-nfl-picks"><h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">NFL Week 7 Predictions
+            </h1></a>
+            <a href="https://bleacherreport.com/articles/2914424-bleacher-reports-expert-consensus-week-7-nfl-picks"><p class="mb-8 leading-relaxed">Our experts pick every game against the spread </p></a>
+          </div>
+        </div>
+      </section>
+      
+
+<section class="text-gray-700 body-font">
+  <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <a href="https://bleacherreport.com/articles/2914597-leagues-best-d-undefeated-steelers-can-prove-it-against-undefeated-titans"><h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">'They Will Shut Down Tennessee'
+      </h1></a>
+      <a href="https://bleacherreport.com/articles/2914597-leagues-best-d-undefeated-steelers-can-prove-it-against-undefeated-titans"><p class="mb-8 leading-relaxed">Why NFL scouts believe PIT's 'best front seven in football' will prove they're for real vs. Derrick Henry and the 5-0 Titans</p></a>
+    </div>
+    <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+      <img class="object-cover object-center rounded" alt="hero" src="Images/heads.webp">
+    </div>
+  </div>
+</section>
+
+
+<div class="row" style="background-color: gold;">
+    
+    <div class="column" style="padding-top: 50px;padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+      <a href="http://bleacherreport.com/post/top-10-2/3dec9409-d0e0-4f1c-a748-879cc8826e26"><img src="Images/gridron.webp" alt="News Pic" style="width:90%"></a>
+    </div>
+    <div class="column" style="padding-top: 50px;padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+      <a href="http://bleacherreport.com/post/top-10-2/67c5342b-8d42-462b-9ae6-0eb1fc27257e"><img src="Images/sever.webp" alt="News Pic" style="width:90%"></a>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  </div>
+
+  <div class="container">
+          <img src="Images/wolves.webp" alt="Wolves" style="width: 100%; padding-left: 300px;">
+    <div class="text-block">
+        <div style="background-color: forestgreen;">
+            <h3 class="heading">NBA</h3>
+        </div>
+        
+        <a href="https://bleacherreport.com/articles/2912558-trevon-duval-undrafted-duke-one-and-done-tries-to-keep-his-hoop-dreams-alive"><h3><b>Did Mega-Recruit Make a Mistake?
+      </h3></a></b>
+      <a href="https://bleacherreport.com/articles/2912558-trevon-duval-undrafted-duke-one-and-done-tries-to-keep-his-hoop-dreams-alive"><p>Duke one-and-done Trevon Duval thought he'd be a first-rounder. He went undrafted. How he's keeping his NBA dreams alive </p></a>
+    </div>
+  </div> 
+
+  <br>
+  <br>
+
+  <div class="row" style="background-color:lightskyblue">
+    
+    <div class="column" style="padding-top: 50px;padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+      <a href="http://bleacherreport.com/post/top-10-1/c64bc567-fbb1-40ec-a96a-feb61e737608"><img src="Images/demar.webp" alt="News Pic" style="width:90%"></a>
+    </div>
+    <div class="column" style="padding-top: 50px;padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+      <a href="http://bleacherreport.com/post/top-10-1/e7a806c8-d496-425a-b078-53824e55040f"><img src="Images/malcolm.webp" alt="News Pic" style="width:90%"></a>
+    </div>
+  </div>
+  <br>
+  <br>
+
+  </div>
+
+  <section class="text-gray-700 body-font">
+    <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <a href="https://bleacherreport.com/articles/2914424-bleacher-reports-expert-consensus-week-7-nfl-picks"><img class="object-cover object-center rounded" alt="hero" src="Images/rays.webp"></a>
+      </div>
+      <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <a href="https://bleacherreport.com/articles/2914424-bleacher-reports-expert-consensus-week-7-nfl-picks"><h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Have the Rays Unlocked the Future of Pitching?
+        </h1></a>
+        <a href="https://bleacherreport.com/articles/2914424-bleacher-reports-expert-consensus-week-7-nfl-picks"><p class="mb-8 leading-relaxed">Tampa Bay's pitching matchups have gotten them to the doorstep of a championship so far</p></a>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="text-gray-700 body-font">
+<div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+        <a href="https://bleacherreport.com/articles/2914424-bleacher-reports-expert-consensus-week-7-nfl-picks"><h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Moments That Made Game 4 an Instant Classic
+        </h1></a>
+        <a href="https://bleacherreport.com/articles/2914424-bleacher-reports-expert-consensus-week-7-nfl-picks"><p class="mb-8 leading-relaxed">How the Rays evened the World Series while having 'as much fun as you can have'</p></a>
+      </div>
+<div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+  <img class="object-cover object-center rounded" alt="hero" src="Images/instant.webp">
+</div>
+</div>
+</section>
+
+<div class="container">
+    <img src="Images/underrated.webp" alt="Wolves" style="width: 100%; padding-left: 300px;">
+<div class="text-block">
+  <div style="background-color: forestgreen;">
+      <h3 class="heading">UNDERRATED</h3>
+  </div>
+  
+  <a href="http://bleacherreport.com/post/hero-3/fb673423-2086-4b4e-800b-26da902ca552"><h3><b>Tucker Kicks 67-Yard FG 
+</h3></a></b>
+<a href="http://bleacherreport.com/post/hero-3/fb673423-2086-4b4e-800b-26da902ca552"><p> Ravens All-Pro Justin Tucker doesn’t have a 99 kick power in Madden. So he tries to fix that. Watch ‘Underrated’ </p></a>
+</div>
+</div> 
+
+<br>
+<br>
+
+<footer style="background-color: black;">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col" style="color: white;">
+        <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+          <!--<svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">-->
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+          </svg>
+          <span class="ml-3 text-xl" style="text-align: center; color:white">B/R</span>
+        </a>
+        <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Bleach Report
+          <a href="https://twitter.com" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@ahmadshafiq</a>
+        </p>
+        
+        <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+          <a class="text-gray-500">
+          <a href="https://www.facebook.com"><svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg></a>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <a href="https://twitter.com"><svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <a href="https://www.instagram.com"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg></a>
+          </a>
+          <a class="ml-3 text-gray-500">
+            <a href="https://www.linkedin.com"><svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+    
+    
+    
+      </div>
+
+<div style="background-color: black;">
+    <br>
+    <p style="text-align: center; padding-top: 2ch; padding-bottom:10ch; color:white;" ><sub><br>
+      <a href="#">About</a>|
+      <a href="#">Advertise</a>|
+      <a href="#">Contact Us</a>|
+      <a href="#">Careers</a>|
+      <a href="#">Community Guidlines</a>|
+      <a href="#">Privacy</a>|
+      <a href="#">Qukies</a>
+      <a href="#">Terms of Use</a>
+      <br>
+      
+      Copyright © 2020 Bleacher Report, Inc. Turner Broadcasting System, Inc. All Rights Reserved. BleacherReport.com is part of Bleacher<br> Report – Turner Sports Network, part of the Turner Sports and Entertainment Network. Certain photos copyright<br> © 2020 Getty Images. Any commercial use or distribution without the express written consent of Getty Images is strictly prohibited. AdChoices
+      
+
+    </sub></p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
